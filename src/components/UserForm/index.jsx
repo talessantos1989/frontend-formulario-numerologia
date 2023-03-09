@@ -6,7 +6,7 @@ export default function UserForm({ data, updadateFieldHandler }) {
   return (
     <div>
       <div className="form-control">
-        <label htmlFor="name">Nome Completo</label>
+        <label htmlFor="name">Nome Completo de Nascimento (com acentos se houver)</label>
         <input
           type="text"
           name="name"
