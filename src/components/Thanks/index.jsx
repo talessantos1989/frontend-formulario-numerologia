@@ -23,7 +23,7 @@ export default function Thanks({ data }) {
           <em>
             <strong>SPAN</strong>
           </em>
-          . Pois seu mapa pode cair no <strong>SPAN</strong>, na aba de{" "}
+          . Seu mapa pode cair no <strong>SPAN</strong>, na aba de{" "}
           <strong>Promoções</strong> ou aba <strong>Social</strong>
         </p>
       </div>

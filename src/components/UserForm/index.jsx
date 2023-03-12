@@ -1,5 +1,3 @@
-import { AiOutlineInfoCircle } from "react-icons/ai";
-import { Tooltip as ReactTooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
 export default function UserForm({ data, updadateFieldHandler }) {
