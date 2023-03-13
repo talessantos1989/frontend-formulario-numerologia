@@ -60,7 +60,7 @@ export function useForm(steps) {
         transaction_code: transactionCode,
       })
       .then((response) => console.log(response))
-      .catch((error) => console.log(error));
+      .catch((error) => console.log("Erro =>", error));
   }
 
   return {
