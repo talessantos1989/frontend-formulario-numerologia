@@ -60,9 +60,8 @@ export function useForm(steps) {
         transaction_code: transactionCode,
       })
       .then((response) => {
-        if(response.data.code){
-          console.log(response)
-          // changeStep(currentStep + 1, event);
+        if(response{
+          console.log(response.data)
         }
       })
       .catch((error) => console.log("Erro =>", error));
