@@ -60,7 +60,7 @@ export function useForm(steps) {
         transaction_code: transactionCode,
       })
       .then((response) => {
-        if(response{
+        if(response){
           console.log(response.data)
         }
       })
