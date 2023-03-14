@@ -61,7 +61,7 @@ export function useForm(steps) {
       })
       .then((response) => {
         if(response){
-          console.log(response.data)
+          console.log(response)
         }
       })
       .catch((error) => console.log("Erro =>", error));
