@@ -37,7 +37,6 @@ export function useForm(steps) {
     .then((response) => {
       const result = response.data.status !== "NOK";
       if (result) {
-        
         addCustomers(
           data,
           response.data.status,
@@ -62,6 +61,7 @@ export function useForm(steps) {
       })
       .then((response) => {
         if(response){
+          console.log(response)
           changeStep(currentStep + 1, event);
         }
         console.log(response)
