@@ -37,11 +37,12 @@ export function useForm(steps) {
     .then((response) => {
       const result = response.data.status !== "NOK";
       if (result) {
-        changeStep(currentStep + 1, event);
+        
         addCustomers(
           data,
           response.data.status,
-          response.data.transactionCode
+          response.data.transactionCode,
+          event
         );
       } else {
         setstatusMessage(response.data.statusMessage);
@@ -49,7 +50,7 @@ export function useForm(steps) {
     });
   }
 
-  async function addCustomers(data, status, transactionCode) {
+  async function addCustomers(data, status, transactionCode, event) {
     await http
       .post("/", {
         name: data.name,
@@ -59,7 +60,12 @@ export function useForm(steps) {
         status: status,
         transaction_code: transactionCode,
       })
-      .then((response) => console.log(response))
+      .then((response) => {
+        if(response){
+          changeStep(currentStep + 1, event);
+        }
+        console.log(response)
+      })
       .catch((error) => console.log("Erro =>", error));
   }
 

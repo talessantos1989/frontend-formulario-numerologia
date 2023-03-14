@@ -53,31 +53,6 @@ export default function UserForm({ data, updadateFieldHandler }) {
           onChange={(e) => updadateFieldHandler("phone", e.target.value)}
         />
       </div>
-
-      {/* <div className="form-control">
-        <label htmlFor="transaction_code">
-          Código da Transação Hotmart
-          <span
-            id="tooltip"
-            className="span-tooltip"
-            data-tooltip-content={`O código da sua compra na plataforma de vendas. 
-            Ele começa com HP... Abra o e-mail que a hotmart enviou e copie este número e cole aqui`}
-          >
-            <ReactTooltip anchorId="tooltip" />
-            <AiOutlineInfoCircle size={15} />
-          </span>
-        </label>
-
-        <input
-          type="text"
-          name="transaction_code"
-          id="transaction_code"
-          placeholder="Digite o Código da Transação Hotmart"
-          required
-          value={data.transaction_code}
-          onChange={(e) => updadateFieldHandler("transaction_code", e.target.value)}
-        />
-      </div> */}
     </div>
   );
 }
