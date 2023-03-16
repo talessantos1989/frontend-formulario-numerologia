@@ -63,10 +63,9 @@ export function useForm(steps) {
         status: status,
       })
       .then((response) => {
-        console.log(response.data.affectedRows)
-        if(response.data.affectedRows > 0){
-          changeStep(currentStep + 1, event)
-        }
+        // if(response.data.affectedRows > 0){
+        //   changeStep(currentStep + 1, event)
+        // }
       })
       .catch((error) => console.log("Erro =>", error));
   }
