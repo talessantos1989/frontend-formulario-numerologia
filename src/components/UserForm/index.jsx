@@ -4,15 +4,15 @@ export default function UserForm({ data, updadateFieldHandler }) {
   return (
     <div>
       <div className="form-control">
-        <label htmlFor="name">Nome Completo de Nascimento (com acentos se houver)</label>
+        <label htmlFor="nome">Nome Completo de Nascimento (com acentos se houver)</label>
         <input
           type="text"
-          name="name"
-          id="name"
+          name="nome"
+          id="nome"
           placeholder="Exemplo: Ana Paula da Silva"
           required
-          value={data.name || ""}
-          onChange={(e) => updadateFieldHandler("name", e.target.value)}
+          value={data.nome || ""}
+          onChange={(e) => updadateFieldHandler("nome", e.target.value)}
         />
       </div>
 
@@ -30,27 +30,27 @@ export default function UserForm({ data, updadateFieldHandler }) {
       </div>
 
       <div className="form-control">
-        <label htmlFor="date_birth">Data de Nascimento</label>
+        <label htmlFor="data_nascimento">Data de Nascimento</label>
         <input
           type="date"
-          name="date_birth"
-          id="date_birth"
+          name="data_nascimento"
+          id="data_nascimento"
           required
-          value={data.date_birth}
-          onChange={(e) => updadateFieldHandler("date_birth", e.target.value)}
+          value={data.data_nascimento}
+          onChange={(e) => updadateFieldHandler("data_nascimento", e.target.value)}
         />
       </div>
 
       <div className="form-control">
-        <label htmlFor="phone">Celular</label>
+        <label htmlFor="telefone">Celular</label>
         <input
           type="celular"
-          name="phone"
-          id="phone"
+          name="telefone"
+          id="telefone"
           placeholder="Exemplo: 11999998888"
           required
-          value={data.phone}
-          onChange={(e) => updadateFieldHandler("phone", e.target.value)}
+          value={data.telefone}
+          onChange={(e) => updadateFieldHandler("telefone", e.target.value)}
         />
       </div>
     </div>

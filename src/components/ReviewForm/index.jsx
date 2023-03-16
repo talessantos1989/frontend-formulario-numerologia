@@ -9,7 +9,7 @@ export default function ReviewForm({data, statusMessage}){
                 <p>Se suas informações estiverem corretas, clique no botão <strong>Enviar</strong></p>
                 <p className="review-data">
                     <span>Nome: </span>
-                    {data.name}
+                    {data.nome}
                 </p>
 
                 <p className="review-data">
@@ -19,12 +19,12 @@ export default function ReviewForm({data, statusMessage}){
 
                 <p className="review-data">
                     <span>Data de Nascimento: </span>
-                    {data.date_birth}
+                    {data.data_nascimento}
                 </p>
 
                 <p className="review-data">
                     <span>Celular: </span>
-                    {data.phone}
+                    {data.telefone}
                 </p>
                 {/* <p className="review-data">
                     <span>Código da Transação Hotmart: </span>

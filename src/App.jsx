@@ -14,11 +14,15 @@ import "./App.css";
 import { useForm } from "./hooks/useForm";
 
 const formTemplate = {
-  name: "",
+  id_cliente:"",
+  nome: "",
   email: "",
-  date_birth: "",
-  phone: "",
-  transaction_code: "",
+  telefone: "",
+  data_compra: "",
+  data_nascimento: "",
+  codigo_transacao: "",
+  enviado:"",
+  status: ""
 };
 
 function App() {
