@@ -1,7 +1,7 @@
 import styles from "./Thanks.module.css";
 
 export default function Thanks({ data }) {
-  const nameSplit = data.name.split(" ").slice(0, 1).join(" ");
+  const nameSplit = data.nome.split(" ").slice(0, 1).join(" ");
   return (
     <div>
       <div className={styles.thanksHeader}>

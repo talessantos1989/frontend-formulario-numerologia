@@ -64,7 +64,7 @@ export function useForm(steps) {
       })
       .then((response) => {
         console.log(response.data.affectedRows)
-        if(response.data.affectedRows){
+        if(response.data.affectedRows > 0){
           changeStep(currentStep + 1, event)
         }
       })
