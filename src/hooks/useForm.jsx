@@ -52,14 +52,11 @@ export function useForm(steps) {
   async function addCustomers(data, status, transactionCode, event) {
     await http
       .post("/", {
-        id_cliente: 1,
         nome: data.nome,
         email: data.email,
         telefone: data.telefone,
-        data_compra: new Date(),
         data_nascimento: data.data_nascimento,
         codigo_transacao: transactionCode,
-        enviado: 0,
         status: status,
       })
       .then((response) => {
