@@ -63,8 +63,9 @@ export function useForm(steps) {
         status: status,
       })
       .then((response) => {
-        if(response){
-          console.log(response)
+        console.log(response.data.affectedRows)
+        if(response.data.affectedRows){
+          changeStep(currentStep + 1, event)
         }
       })
       .catch((error) => console.log("Erro =>", error));
