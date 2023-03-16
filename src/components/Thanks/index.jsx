@@ -1,7 +1,6 @@
 import styles from "./Thanks.module.css";
 
 export default function Thanks({ data }) {
-  console.log(data)
   const nameSplit = data.nome.split(" ").slice(0, 1).join(" ");
   return (
     <div>
