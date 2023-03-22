@@ -19,7 +19,7 @@ export default function ReviewForm({data, statusMessage}){
 
                 <p className="review-data">
                     <span>Data de Nascimento: </span>
-                    {data.data_nascimento}
+                    {data.data_nascimento.toLocaleTimeString()}
                 </p>
 
                 <p className="review-data">
