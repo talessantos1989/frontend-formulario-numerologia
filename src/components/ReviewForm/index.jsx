@@ -5,7 +5,7 @@ export default function ReviewForm({data, statusMessage}){
 
     const datedmy  = new Date(data.data_nascimento);
     datedmy.setDate(datedmy.getDate() + 1)
-    console.log(datedmy.toLocaleDateString)
+    console.log(datedmy.toLocaleDateString())
 
     return(
         <>
