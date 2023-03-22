@@ -60,7 +60,7 @@ export function useForm(steps) {
         status: status,
       })
       .then((response) => {
-        if(response.data.affectedRows > 0){
+        if(response.data.rowCount > 0){
           changeStep(currentStep + 1, event)
         }
       })
