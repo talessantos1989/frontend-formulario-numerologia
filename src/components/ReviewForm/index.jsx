@@ -3,7 +3,7 @@ import './reviewForm.css'
 
 export default function ReviewForm({data, statusMessage}){
 
-    const datedmy  = new Date(data.data_nascimento).toLocaleDateString()
+    const datedmy  = new Date(data.data_nascimento).toDateString()
     return(
         <>
             <div className="review-container">
