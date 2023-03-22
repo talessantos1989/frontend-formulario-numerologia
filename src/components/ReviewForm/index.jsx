@@ -23,7 +23,7 @@ export default function ReviewForm({data, statusMessage}){
 
                 <p className="review-data">
                     <span>Data de Nascimento: </span>
-                    {date}
+                    {/* {date} */}
                 </p>
 
                 <p className="review-data">
