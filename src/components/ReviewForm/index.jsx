@@ -3,7 +3,9 @@ import './reviewForm.css'
 
 export default function ReviewForm({data, statusMessage}){
 
-    const datedmy  = new Date(data.data_nascimento).toLocaleDateString()
+    const datedmy  = new Date(data.data_nascimento);
+    datedmy.getDate() + 1;
+    const stringDate = datedmy.toLocaleDateString()
     return(
         <>
             <div className="review-container">
@@ -21,7 +23,7 @@ export default function ReviewForm({data, statusMessage}){
 
                 <p className="review-data">
                     <span>Data de Nascimento: </span>
-                    {datedmy}
+                    {stringDate}
                 </p>
 
                 <p className="review-data">
