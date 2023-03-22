@@ -4,7 +4,7 @@ import './reviewForm.css'
 export default function ReviewForm({data, statusMessage}){
 
     const datedmy  = new Date(data.data_nascimento);
-    const a = datedmy.getDate() + 1
+    const a = datedmy.getDate()
     console.log(a);
 
     return(
